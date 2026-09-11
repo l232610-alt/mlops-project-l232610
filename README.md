@@ -14,3 +14,5 @@ Create a virtual environment:
 python -m venv venv
 
 Git reset demonstration
+
+Project workflow is managed using Git and MLOps best practices.

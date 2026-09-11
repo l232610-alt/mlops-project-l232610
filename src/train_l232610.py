@@ -14,7 +14,11 @@ print(f"Loading dataset for student {STUDENT_ID}...")
 data = pd.read_csv("data/dataset.csv")
 
 # Separate features and target
+<<<<<<< HEAD
 X = (data.drop("price", axis=1) - data.drop("price", axis=1).mean()) / data.drop("price", axis=1).std()
+=======
+X = (data.drop("price", axis=1) - data.drop("price", axis=1).min()) / (data.drop("price", axis=1).max() - data.drop("price", axis=1).min())
+>>>>>>> feature-tuning-l232610
 y = data["price"]
 
 # Split dataset
